@@ -4,144 +4,172 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Baptiste Barrachina</title>
-    <link rel="stylesheet" href="portfolio.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Portfolio</h1>
-        <p>BARRACHINA Baptiste - BUT SD Première année Avignon</p>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="#biographie">Biographie</a></li>
-            <li><a href="#formation">Formation</a></li>
-            <li><a href="#competences">Compétences Techniques</a></li>
-            <li><a href="#transversales">Compétences Transversales</a></li>
-            <li><a href="#passions">Passions & Voyages</a></li>
-            <li><a href="#conclusion">Conclusion</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Baptiste B.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#bio">Biographie</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#formation">Formation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#competences">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#passions">Passions</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <div class="main-content">
+    <header class="bg-primary text-white text-center py-5 mt-5">
+        <div class="container py-5">
+            <h1 class="display-4 fw-bold">PORTFOLIO</h1>
+            <p class="lead">Baptiste BARRACHINA - Étudiant BUT SD (Science des Données)</p>
+            <a href="#bio" class="btn btn-light btn-lg mt-3">Découvrir mon profil</a>
+        </div>
+    </header>
 
-        <section id="biographie">
-            <h2>1. Biographie</h2>
-            <p>Je m’appelle Baptiste Barrachina, je suis né à Avignon et j'habite à l’Isle-sur-la-Sorgue depuis que je suis né, donc on peut dire que je suis un enfant du pays.</p>
-            <p>Je suis passionné depuis petit par l’informatique et par les maths autour des données. Quand j'étais petit, j'avais un petit chien robot où il fallait que je code pour qu'il fonctionne, et j'ai beaucoup aimé ça. C'est pour ça que j'ai fait un bac avec option maths et NSI en terminale et physique en première.</p>
-            <p>Durant ces années de bac, j'ai regardé ce qui me plaisait avec ces deux matières et, comme j'ai adoré comprendre et utiliser du SQL et les bases de données, je me suis orienté vers les bases de données naturellement.</p>
-            <p>Je suis allé dans le BUT Science des Données (SD) que j'ai découvert lors d'une porte ouverte à l'IUT d’Avignon quand j’étais en première et en terminale au lycée Alphonse Benoit. Maintenant, je suis étudiant en première année au BUT Science des données (SD) à l’IUT d’Avignon.</p>
-            <p><strong>Mon objectif :</strong> C'est d'intégrer une école d'ingénieurs, de préférence publique, comme Polytechnique ou L'ENSAI, pour faire data scientist ou un autre métier dans le domaine de la statistique et des bases de données. Sinon, partir en master en Big Data et IA, en Data Science ou en Machine Learning. Finalement, si je ne veux pas poursuivre d'études après ce BUT, je peux travailler juste après, parce que j'aurai les compétences pour travailler dans des entreprises qui sont en demande en ce moment.</p>
-            <p>J'aimerais travailler dans le domaine de la culture et de la géographie avec la data.</p>
+    <div class="container">
+
+        <section id="bio">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>1. Biographie</h2>
+                    <p class="lead">Né à Avignon et habitant de l’Isle-sur-la-Sorgue.</p>
+                    <p>Passionné depuis l'enfance par l’informatique et les mathématiques appliquées aux données. Mon parcours a débuté avec la programmation de jouets robots, s'est confirmé par un Bac Maths/NSI, et se poursuit aujourd'hui en BUT Science des Données à l'IUT d'Avignon.</p>
+                    <div class="alert alert-info mt-3">
+                        <strong>Mon objectif :</strong> Intégrer une école d'ingénieurs (Polytechnique, ENSAI) ou un Master Big Data/IA pour devenir Data Scientist.
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="formation">
-            <h2>2. Présentation du BUT SD d'Avignon</h2>
-            <p>Le BUT (Bachelor Universitaire de Technologie) en Science des données à Avignon est une formation de 3 ans (bac+3) qui permet d'acquérir des compétences techniques et analytiques dans le domaine de la science des données. Cette formation est particulièrement adaptée pour les étudiants souhaitant travailler avec les données, développer des modèles qui se répètent et maîtriser des outils d’analyse de données dans divers secteurs d’activité.</p>
-
-            <h3>2.1 Ressources et durée</h3>
-            <p>Le BUT en science des données dure généralement 3 ans, mais peut durer 2 ans. La formation repose sur des cours normaux en classes traditionnelles (tableau et bureau) et des classes informatiques, avec des enseignements en présentiel, des travaux pratiques, des projets et des stages en entreprise en seconde année. Les étudiants utilisent des outils informatiques et sont formés à travailler sur des données réelles (ex: données de l’INSEE).</p>
-
-            <h3>2.2 Disciplines abordées</h3>
-            <ul>
-                <li><strong>Mathématiques et statistiques :</strong> théorie des probabilités, statistiques appliquées, analyse de données.</li>
-                <li><strong>Informatique et programmation :</strong> algorithmique, programmation en Python, bases de données, technologies web, machine learning.</li>
-                <li><strong>Modélisation et analyse des données :</strong> data mining, apprentissage automatique, intelligence artificielle.</li>
-                <li><strong>Gestion de projets :</strong> gestion de données, gestion des projets de data science, éthique des données.</li>
-                <li><strong>Applications des données :</strong> data science dans les secteurs de la population française (recensement), de la santé, etc.</li>
-            </ul>
-
-            <h3>2.3 Débouchés</h3>
-            <p>Les diplômés peuvent envisager une variété de carrières dans les secteurs public, privé et associatif :</p>
-            <ul>
-                <li>Data analyst / Data scientist</li>
-                <li>Ingénieur en machine learning</li>
-                <li>Analyste en intelligence économique</li>
-                <li>Consultant en data science</li>
-                <li>Responsable des données (Data Manager)</li>
-                <li>Expert en analyse prédictive</li>
-            </ul>
-
-            <h3>2.4 Pourquoi cette formation ?</h3>
-            <p>J'ai choisi cette formation car elle répond à mes ambitions professionnelles de travailler dans un secteur qui se renouvelle et change constamment. Le domaine des données est au cœur des innovations technologiques, et j'aspire à développer des solutions innovantes pour résoudre des problématiques complexes.</p>
-            <p>Le programme allie compétences techniques solides et connaissances pratiques. La formation à Avignon propose une approche basée sur la proximité avec le monde professionnel (stages, projets, partenariats), ce qui me permettra d’acquérir une expérience précieuse.</p>
+        <section id="formation" class="bg-light p-4 rounded">
+            <h2>2. La Formation BUT SD</h2>
+            <p>Le Bachelor Universitaire de Technologie (BUT) Science des Données est une formation de 3 ans alliant technique et analyse.</p>
+            
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="card mb-3 border-0 bg-transparent">
+                        <div class="card-body ps-0">
+                            <h5 class="card-title text-primary">Disciplines Clés</h5>
+                            <ul class="list-group list-group-flush bg-transparent">
+                                <li class="list-group-item bg-transparent ps-0">Mathématiques & Statistiques</li>
+                                <li class="list-group-item bg-transparent ps-0">Informatique (Python, SQL, Web)</li>
+                                <li class="list-group-item bg-transparent ps-0">Machine Learning & IA</li>
+                                <li class="list-group-item bg-transparent ps-0">Gestion de projet & Éthique</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-3 border-0 bg-transparent">
+                        <div class="card-body ps-0">
+                            <h5 class="card-title text-primary">Débouchés</h5>
+                            <ul class="list-group list-group-flush bg-transparent">
+                                <li class="list-group-item bg-transparent ps-0">Data Scientist / Analyst</li>
+                                <li class="list-group-item bg-transparent ps-0">Ingénieur Machine Learning</li>
+                                <li class="list-group-item bg-transparent ps-0">Data Manager</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="competences">
-            <h2>3. Mes compétences techniques (SAÉ)</h2>
-            <p>Il y a 3 unités d’enseignement principales : Valoriser, Traiter et Analyser.</p>
+            <h2>3. Compétences Techniques (SAÉ)</h2>
+            <div class="row g-4">
+                
+                <div class="col-md-4">
+                    <div class="card h-100 border-primary">
+                        <div class="card-header bg-primary text-white">3.1 Valoriser</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Analyse Financière (Engie)</h5>
+                            <p class="card-text text-muted">Étude de cas CAC 40</p>
+                            <ul>
+                                <li>Contextualisation des données</li>
+                                <li>Graphiques sous RStudio</li>
+                                <li>Bases de données bilans</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="sae-block">
-                <h3>3.1 Valoriser (Économie, Communication)</h3>
-                <p><strong>SAE :</strong> Apprendre en situation la production de données.</p>
-                <p><strong>Contexte :</strong> Utilisation de données d'entreprises du CAC 40. Nous avons choisi Engie (électricité) et analysé ses bilans comptables.</p>
-                <p><strong>Objectifs :</strong> Identifier l'importance de contextualiser les données, utiliser des indicateurs pertinents et expliciter la démarche suivie. Comprendre le rôle de la donnée dans le monde socio-économique.</p>
-                <p><strong>Réalisations :</strong> Présentation de l'entreprise (contexte, organisation interne), analyse des données financières, identification des modes de production/innovation/RSE et positionnement face aux concurrents.</p>
-                <p><strong>Outils :</strong> RStudio (graphiques), création d'une base de données des bilans, Google Doc/Slides.</p>
-                <p><strong>Résultat :</strong> L’une des meilleures notes de la classe grâce à une bonne contextualisation, des graphiques pertinents et une bonne présentation.</p>
+                <div class="col-md-4">
+                    <div class="card h-100 border-success">
+                        <div class="card-header bg-success text-white">3.2 Traiter</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Reporting SQL</h5>
+                            <p class="card-text text-muted">Comportements d'achats</p>
+                            <ul>
+                                <li>Requêtes SQL (pgAdmin)</li>
+                                <li>Visualisation LibreOffice</li>
+                                <li>Tableaux croisés dynamiques</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 border-warning">
+                        <div class="card-header bg-warning text-dark">3.3 Analyser</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Statistiques Immobilières</h5>
+                            <p class="card-text text-muted">Valeurs foncières Marseille</p>
+                            <ul>
+                                <li>Nettoyage de données (R)</li>
+                                <li>Calculs statistiques (Quartiles)</li>
+                                <li>Boîtes à moustaches</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-
-            <div class="sae-block">
-                <h3>3.2 Traiter (Informatique, Base de données)</h3>
-                <p><strong>SAE :</strong> Reporting à partir de données stockées dans un SGBD.</p>
-                <p><strong>Contexte :</strong> Exploiter des données sur les comportements d'achats des ménages en Rhône-Alpes-Auvergne pour répondre à la problématique « Où ? ».</p>
-                <p><strong>Objectifs :</strong> Manipuler une base de données, faire un rapport propre avec visualisations, maîtriser SQL et LibreOffice Calc.</p>
-                <p><strong>Réalisations :</strong> Extraction SQL sur pgAdmin. Traitement sur LibreOffice Calc (Fonctions SI, NB.VAL, SOMMEPROD, Tableaux croisés dynamiques, Graphiques). Rédaction d'un rapport structuré.</p>
-                <p><strong>Résultat :</strong> Note dans la médiane. Difficultés sur les liaisons SGBD mais bonne réalisation des graphiques et fonctions (bien que mal expliquées).</p>
-            </div>
-
-            <div class="sae-block">
-                <h3>3.3 Analyser (Mathématiques, Statistique)</h3>
-                <p><strong>SAE :</strong> Préparation et synthèse d'un tableau de données.</p>
-                <p><strong>Contexte :</strong> Analyse statistique de données réelles (valeurs foncières) sur deux arrondissements de Marseille pour montrer les disparités socio-économiques.</p>
-                <p><strong>Objectifs :</strong> Importer, nettoyer et structurer un jeu de données. Réaliser des calculs statistiques descriptifs et analyser les données via RStudio.</p>
-                <p><strong>Réalisations :</strong> Importation et filtrage des données sur RStudio. Calculs de statistiques (quartiles, interquartiles) pour comparer les arrondissements. Création d'histogrammes et de boîtes à moustaches.</p>
-            </div>
-        </section>
-
-        <section id="transversales">
-            <h2>4. Compétences Transversales et Numériques</h2>
-            <h3>Compétences Transversales</h3>
-            <ul>
-                <li><strong>Travail en groupe :</strong> Collaboration, répartition des tâches type "entreprise", mise en avant des qualités de chacun.</li>
-                <li><strong>Gestion de projets :</strong> Anticipation et planification du travail.</li>
-                <li><strong>Communication :</strong> Présentations orales des résultats de projets.</li>
-            </ul>
-
-            <h3>Compétences Numériques</h3>
-            <ul>
-                <li>Maîtrise des bases de données en SQL avec pgAdmin.</li>
-                <li>Maîtrise des graphiques avec RStudio et ses librairies.</li>
-                <li>Maîtrise du tableur et traitement de texte (Word, Excel, LibreOffice).</li>
-            </ul>
         </section>
 
         <section id="passions">
-            <h2>5. Passions, Passe-Temps et Voyages</h2>
-            <ul>
-                <li><strong>Voyages :</strong> États-Unis (Seattle), Canada (Montréal, Québec), Norvège (Oslo, Bergen, Cap Nord).</li>
-                <li><strong>Radio :</strong> Animateur musical à Radio Campus Avignon (interviews, critiques musicales).</li>
-                <li><strong>Sport & Associatif :</strong>
-                    <ul>
-                        <li>Ancien joueur de foot (BCI, Velleron) et de basket (association du lycée).</li>
-                        <li>Pratique du basket entre amis.</li>
-                        <li>Ancien membre du conseil municipal des enfants (création d'un skatepark à L'Isle-sur-la-Sorgue).</li>
-                    </ul>
-                </li>
-            </ul>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="p-4 border rounded bg-white shadow-sm h-100">
+                        <h3 class="h4">Compétences Transversales</h3>
+                        <hr>
+                        <ul>
+                            <li><strong>Gestion :</strong> Travail de groupe, planification.</li>
+                            <li><strong>Outils :</strong> Suite Office, Git, SQL, R.</li>
+                            <li><strong>Communication :</strong> Présentations orales, synthèses.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-4 border rounded bg-white shadow-sm h-100">
+                        <h3 class="h4">Passions & Voyages</h3>
+                        <hr>
+                        <p><strong>Voyages :</strong> USA (Seattle), Canada (Montréal), Norvège (Fjords).</p>
+                        <p><strong>Radio :</strong> Animateur à Radio Campus Avignon.</p>
+                        <p><strong>Engagement :</strong> Création d'un skatepark (Conseil municipal jeunes).</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="conclusion">
-            <h2>6. Conclusion</h2>
-            <p>Cette année de BUT a été formatrice, avec des cours techniques en informatique et mathématiques, et très intéressante. Je veux progresser dans le domaine qui m’intéresse pour partir en école d’ingénieurs ou en master. Cette formation me correspond par rapport à ce qui est proposé et à mon projet professionnel.</p>
+        <section id="conclusion" class="text-center py-5 mb-4 bg-light rounded">
+            <h3>Conclusion</h3>
+            <p class="w-75 mx-auto lead">Une année formatrice qui confirme mon choix. Prêt pour la suite en école d'ingénieurs !</p>
         </section>
 
     </div>
 
-    <footer>
-        <p>&copy; 2024 - Portfolio Baptiste Barrachina - BUT SD Avignon</p>
+    <footer class="bg-dark text-white text-center py-4">
+        <p class="mb-0">&copy; 2024 - Portfolio Baptiste Barrachina</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
